@@ -24,6 +24,14 @@
             </div>
         </div>
     </nav>
+    <?php
+    require "../Clases/Volumen.php";
+    if (isset($_POST['cant'])) {
+        $convertir = new ConvertirLitros();
+        $resultado = $convertir->ConvertirAMilimetros($_POST['cant']);
+    }
+
+    ?>
     <section class="container text-center">
         <h1 class="text-center">Conversor de volumen</h1><br>
         <form action="" method="post">
@@ -65,7 +73,7 @@
                     <div class="col-3">
                         <div class="input-group mb-3">
                             <button class="btn btn-success" type="submit" id="button-addon1">Conversión</button>
-                            <input type="text" class="form-control" value="">
+                            <input type="text" class="form-control" value="<?php echo $resultado ?>">
                         </div>
                     </div>
                 </div>
