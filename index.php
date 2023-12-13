@@ -15,10 +15,10 @@
         <div class="row">
             <div class="col-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="./img/volumen.jpg" class="card-img-top" alt="...">
+                    <img src="./img/Longitud.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h3 class="text-center">Volumen</h3>
-                        <a href="./Vistas/VistaVolumen.php" class="btn btn-primary">Convertir</a>
+                        <h3 class="text-center">Longitud</h3>
+                        <a href="./Vistas/VistaLongitud.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
