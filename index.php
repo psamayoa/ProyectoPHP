@@ -56,7 +56,7 @@
                     <img src="./img/datos.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="text-center">Datos</h3>
-                        <a href="#" class="btn btn-primary">Convertir</a>
+                        <a href="./Vistas/VistaDatos.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
