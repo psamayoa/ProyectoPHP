@@ -1,5 +1,5 @@
 <?php
-include '../Clases/Longitud.php';  // 
+include '../Clases/Masa.php';  // 
 $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el HTML
 ?>
 
@@ -11,7 +11,7 @@ $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Longitud</title>
+    <title>Masa</title>
  
     
 </head>
@@ -26,14 +26,14 @@ $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./VistaLongitud.php">Longitud</a>
+                        <a class="nav-link" href="./VistaMasa.php">Masa</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <section class="container text-center">
-        <h1 class="text-center">Conversor de Longitud</h1><br>
+        <h1 class="text-center">Conversor de Masa</h1><br>
         <form action="" method="post">
             <div class="row">
                 <div class="col-3">
@@ -42,11 +42,12 @@ $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el
                         <label class="input-group-text" for="inputGroupSelect01">Medidas</label>
                         <select class="form-select" name="unidad_origen" id=unidad_origen>
                             <option selected>Elegir...</option>
-                            <option value="kilometro">Kilómetro</option>
-                            <option value="metro">Metro</option>
-                            <option value="decametro">Decámetro</option>
-                            <option value="centimetro">Centímetro</option>
-                            <option value="milimetro">Milímetro</option>
+                            <option value="tonelada">Tonelada</option>
+                            <option value="kilogramo">Kilogramo</option>
+                            <option value="gramo">Gramo</option>
+                            <option value="miligramo">Miligramo</option>
+                            <option value="libra">Libra</option>
+                            <option value="onza">Onza</option>
                         </select>
                     </div>
                 </div>
@@ -61,11 +62,12 @@ $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el
                         <label class="input-group-text" for="inputGroupSelect01">A Convertir</label>
                         <select class="form-select" name= "unidad_destino" id="unidad_destino">
                             <option selected>Elegir...</option>
-                            <option value="kilometro">Kilómetro</option>
-                            <option value="metro">Metro</option>
-                            <option value="decametro">Decámetro</option>
-                            <option value="centimetro">Centímetro</option>
-                            <option value="milimetro">Milímetro</option>
+                            <option value="tonelada">Tonelada</option>
+                            <option value="kilogramo">Kilogramo</option>
+                            <option value="gramo">Gramo</option>
+                            <option value="miligramo">Miligramo</option>
+                            <option value="libra">Libra</option>
+                            <option value="onza">Onza</option>
                         </select>
                     </div>
                 </div><br>
@@ -80,5 +82,6 @@ $resultado = obtenerResultado();  // Inicializa $resultado antes de usarlo en el
         </form>
     </section>
 </body>
+
 
 </html>
