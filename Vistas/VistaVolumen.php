@@ -1,3 +1,7 @@
+<?php
+    include "../Clases/Volumen.php";
+    $resultado = obtenerResultado();
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,14 +28,6 @@
             </div>
         </div>
     </nav>
-    <?php
-    require "../Clases/Volumen.php";
-    if (isset($_POST['cant'])) {
-        $convertir = new ConvertirLitros();
-        $resultado = $convertir->ConvertirAMilimetros($_POST['cant']);
-    }
-
-    ?>
     <section class="container text-center">
         <h1 class="text-center">Conversor de volumen</h1><br>
         <form action="" method="post">
@@ -40,13 +36,13 @@
                     <br>
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupSelect01">Medidas</label>
-                        <select class="form-select" name="medida">
+                        <select class="form-select" name="conversor">
                             <option selected>Elegir...</option>
-                            <option value="ConvertirLitros">Litros</option>
-                            <option value="ConvertirGalones">Galones</option>
-                            <option value="piesCubicos">Pies Cúbicos</option>
-                            <option value="mililitros">Mililitros</option>
-                            <option value="centimetrosCubicos">Centímetros Cúbicos</option>
+                            <option value="litro">Litros</option>
+                            <option value="galon">Galones</option>
+                            <option value="pieCubico">Pies Cúbicos</option>
+                            <option value="mili">Mililitros</option>
+                            <option value="cmCubico">Centímetros Cúbicos</option>
                         </select>
                     </div>
                 </div>
@@ -59,13 +55,13 @@
                 <div class="col-3">
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupSelect01">A Convertir</label>
-                        <select class="form-select" id="inputGroupSelect01">
+                        <select class="form-select" name="conversor_destino">
                             <option selected>Elegir...</option>
-                            <option value="">Litros</option>
-                            <option value="">Galones</option>
-                            <option value="">Pies Cúbicos</option>
-                            <option value="">Mililitros</option>
-                            <option value="">Centímetros Cúbicos</option>
+                            <option value="litro">Litros</option>
+                            <option value="galon">Galones</option>
+                            <option value="piesCubico">Pies Cúbicos</option>
+                            <option value="mili">Mililitros</option>
+                            <option value="cmCubico">Centímetros Cúbicos</option>
                         </select>
                     </div>
                 </div><br>
