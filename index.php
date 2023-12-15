@@ -27,7 +27,7 @@
                     <img src="./img//longitud.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="text-center">Longitud</h3>
-                        <a href="#" class="btn btn-primary">Convertir</a>
+                        <a href="./Vistas/VistaLongitud.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <img src="./img/masa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="text-center">Masa</h3>
-                        <a href="#" class="btn btn-primary">Convertir</a>
+                        <a href="./Vistas/VistaMasa.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
