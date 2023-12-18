@@ -36,7 +36,7 @@
                     <img src="./img/tiempo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="text-center">Tiempo</h3>
-                        <a href="#" class="btn btn-primary">Convertir</a>
+                        <a href="./Vistas/index_tiempo2.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <img src="./img/moneda.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="text-center">Moneda</h3>
-                        <a href="#" class="btn btn-primary">Convertir</a>
+                        <a href="./Vistas/index_moneda2.php" class="btn btn-primary">Convertir</a>
                     </div>
                 </div>
             </div>
