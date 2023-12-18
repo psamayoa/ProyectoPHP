@@ -117,8 +117,8 @@
     </nav>
     <section class="container text-center">
         <h1 class="text-center">Conversor de Datos</h1><br>
-        <form action="" method="post">
-            <div class="row">
+        <form action="" method="post" class="needs-validation" onsubmit="return validarFormulario();" novalidate >
+            <div class="row">   
                 <div class="col-3">
                     <br>
                     <div class="input-group mb-3">
@@ -126,15 +126,22 @@
                         <select class="form-select" name="dato">
                             <option value="bytes" <?=$datoForm==="bytes"?"selected":""?>>Bytes</option>
                             <option value="kb"<?=$datoForm==="kb"?"selected":""?>>KiloBytes</option>
-                            <option value="mb">MegaBytes</option>
-                            <option value="gb">GigaBytes</option>
-                            <option value="tb">TeraBytes</option>
+                            <option value="mb"<?=$datoForm==="mb"?"selected":""?>>MegaBytes</option>
+                            <option value="gb"<?=$datoForm==="gb"?"selected":""?>>GigaBytes</option>
+                            <option value="tb"<?=$datoForm==="tb"?"selected":""?>>TeraBytes</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" >
                     <label>Cantidad</label>
-                    <input type="text" class="form-control" value='<?=$cantidadForm?>' name="cantidad" required>
+                    <input type="text" class="form-control" value='<?=$cantidadForm?>' name="cantidad" id="cantidad" 
+                    onkeypress="validarEntradaConversion(this.value)"  name="cantidad" oninput="validarEntradaConversion(this.value)" required>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa una cantidad válida sin letras y maximo 9 decimales.
+                    </div>
+                    <div class="valid-feedback">
+                        Correcto!
+                    </div>
                 </div>
             </div><br>
             <div class="row">
@@ -142,11 +149,11 @@
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupSelect01">A </label>
                         <select class="form-select" id="inputGroupSelect01" name="seleccionado">
-                            <option value="bytes">Bytes</option>
-                            <option value="kb">KiloBytes</option>
-                            <option value="mb">MegaBytes</option>
-                            <option value="gb">GigaBytes</option>
-                            <option value="tb">TeraBytes</option>
+                            <option value="bytes"<?=$seleccionadoForm==="bytes"?"selected":""?>>Bytes</option>
+                            <option value="kb"<?=$seleccionadoForm==="kb"?"selected":""?>>KiloBytes</option>
+                            <option value="mb"<?=$seleccionadoForm==="mb"?"selected":""?>>MegaBytes</option>
+                            <option value="gb"<?=$seleccionadoForm==="gb"?"selected":""?>>GigaBytes</option>
+                            <option value="tb"<?=$seleccionadoForm==="tb"?"selected":""?>>TeraBytes</option>
                         </select>
                     </div>
                 </div><br>
@@ -161,4 +168,22 @@
         </form>
     </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../validaciones.js"></script>
+<script>
+    function validarFormulario() {
+        // Obtén el elemento input
+        let inputElement = document.querySelector('input[name="cantidad"]');
+        
+        // Verifica si la clase 'is-invalid' está presente
+        if (inputElement.classList.contains('is-invalid')) {
+            // Si es inválido, no envíes el formulario
+            return false;
+        }
+        
+        // Si es válido, puedes enviar el formulario
+        return true;
+    }
+</script>
 </html>

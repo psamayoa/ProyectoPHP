@@ -9,7 +9,7 @@ class ConversionAByte extends Conversion{
 
     public function convertirAKb(){
         $valor = $this->valorEntrada;
-        $valorFinal = number_format($valor/1024, 9, '.', '');
+        $valorFinal = number_format($valor/1024, 12, '.', '');
         return $valorFinal;
     }
 
@@ -21,13 +21,13 @@ class ConversionAByte extends Conversion{
 
     public function convertirAGb(){
         $valor = $this->valorEntrada;
-        $valorFinal = number_format($valor/(1024*1024*1024), 15, '.', '');
+        $valorFinal = number_format($valor/(1024*1024*1024), 12, '.', '');
         return $valorFinal;
     }
 
     public function convertirATb(){
         $valor = $this->valorEntrada;
-        $valorFinal = number_format($valor/(1024*1024*1024*1024), 18, '.', '');
+        $valorFinal = number_format($valor/(1024*1024*1024*1024), 12, '.', '');
         return $valorFinal;
     }
 }
