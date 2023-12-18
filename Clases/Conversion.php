@@ -5,6 +5,11 @@ abstract class Conversion{
     public function __construct($valorEntrada){
         $this->valorEntrada = $valorEntrada;
     }
-    abstract public function convertir();
+    abstract public function convertirAByte();
+    abstract public function convertirAKb();
+    abstract public function convertirAMb();
+    abstract public function convertirAGb();
+    abstract public function convertirATb();
+
 }
 ?>
