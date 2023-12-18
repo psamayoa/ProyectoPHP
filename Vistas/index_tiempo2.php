@@ -47,7 +47,7 @@
             </form>
     </section>
     <?php
-    require "./Tiempo.php";
+    require "./Clases/Tiempo.php";
 
     if(isset($_POST['tiempo'], $_POST['unidad-1'])){
         $tiempo = @$_POST['tiempo'];
