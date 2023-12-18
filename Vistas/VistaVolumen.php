@@ -24,6 +24,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./VistaVolumen.php">Volumen</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VistaMasa.php">Masa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VistaLongitud.php">Longitud</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VistaDatos.php">Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index_moneda2.php">Moneda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index_tiempo2.php">Tiempo</a>
+                    </li>
                 </ul>
             </div>
         </div>
