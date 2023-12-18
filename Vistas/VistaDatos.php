@@ -101,7 +101,7 @@
     }
 ?>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.php">Conversor</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +110,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="./VistaVolumen.php">Volumen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VistaMasa.php">Masa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./VistaLongitud.php">Longitud</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./VistaDatos.php">Datos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index_moneda2.php">Moneda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index_tiempo2.php">Tiempo</a>
                     </li>
                 </ul>
             </div>
