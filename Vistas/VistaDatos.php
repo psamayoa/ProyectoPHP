@@ -18,6 +18,7 @@
     $numero="";
     $cantidadForm="";
     $datoForm="";
+    $seleccionadoForm="";
     if(isset($_POST['cantidad'])){
         $datoForm=$_POST['dato'];
         $seleccionadoForm=$_POST['seleccionado'];
