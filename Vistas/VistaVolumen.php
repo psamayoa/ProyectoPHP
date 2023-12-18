@@ -81,7 +81,7 @@
                     </div>
                 </div><br>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <div class="input-group mb-3">
                             <button class="btn btn-success" type="submit" id="button-addon1">Conversión</button>
                             <input type="text" class="form-control" value="<?php echo $resultado ?>">
