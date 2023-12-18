@@ -91,7 +91,7 @@
     </section>
     <?php
 
-    require "./Moneda.php";
+    require "./Clases/Moneda.php";
 
        $monto = @$_POST['monto'];
        $moneda_conversion = @$_POST['moneda-conversion'];
